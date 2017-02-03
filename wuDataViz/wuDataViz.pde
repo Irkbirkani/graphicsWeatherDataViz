@@ -12,7 +12,7 @@ color c;
 
 
 void setup() {
-  size(1800, 1000); 
+  size(1200, 800); 
   wu1416 = loadTable("wu14_16.csv");
   defMin = 0;
   defMax = wu1416.getRowCount();
@@ -51,7 +51,7 @@ void bars() {
     } else {
       lineMouseX = mouseX - 90;
     }
-    textSize(20);
+    //textSize(20);
     text((wu1416.getString(mouseIdx, 0) + "," + wu1416.getString(mouseIdx, ColNum)), lineMouseX, 50);
     if (ColNum == 1) {
       mode = "High Temperatures F";
@@ -88,7 +88,7 @@ void bars() {
        }
     }
   }
-  textSize(25);
+  //textSize(25);
   fill(255);
   text("Hold Enter for help", 10, 40);
 }  
